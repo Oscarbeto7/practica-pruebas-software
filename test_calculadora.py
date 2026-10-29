@@ -16,3 +16,7 @@ def test_dividir_decimal():
 def test_dividir_entre_cero():
     with pytest.raises(ValueError):
         dividir(10, 0)
+
+def test_dividir_tipo_invalido():
+    with pytest.raises(TypeError):
+        dividir("diez", 2)
